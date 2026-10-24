@@ -8,23 +8,127 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <style>
-        * {
+        *:not(#spacer) {
             font-family: "Roboto Mono", monospace;
+            color: #112222;
         }
 
+        body{
+            background-color: #fff7f0;
+        }
         #header {
             width: 100%;
             height: max(max-content, 5vw, 5vh);
             position: fixed;
             top: 0;
             left: 0;
-            
+            background: linear-gradient(to bottom right, #33aa99, transparent, transparent), linear-gradient(to bottom left, #33aa99, transparent, transparent), linear-gradient(to bottom, #3377aa, #3377aa, transparent);
+        }
+        #spacer{
+            color: transparent;
+            width: 100%;
+            height: max(max-content, 5vw, 5vh);
+        }
+        #soon{
+            background-color: #55aaaa;
+            margin: 5vw;
+            border-radius: 3vw;
+            padding: 3vw;
+            width: 50%;
+            display: inline-block;
+        }
+        #links{
+            display: inline-block;
+
+        }
+        .page{
+            width: 33vw;
+            margin: 2vw;
+            padding: 5vw;
+            padding-top: 2vw;
+            border-radius: 3vw;
+            background-color: #55aaaa;
+            background: linear-gradient(to bottom, #11222277, transparent) #55aaaa;
+            height: max(20vw, max-content);
+        }
+        #github {
+            background: linear-gradient(to bottom, #77779999, #aaaaaa77),  url("./ghicon.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+        #github > h1{
+            color: #224433;
+        }
+        #ghbtn{
+            border-radius: 2vw;
+            background: linear-gradient(to bottom left, #994455, #993377);
+            width: 20vw;
+            height: max(3vw, max-content);
+            display: inline-block;
+            padding: 1vw;
+        }
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <div id="header">
         <h1>Bora Yılmaz</h1>
+    </div>
+
+    <div id='spacer'>
+    <h1><br></h1>
+    </div>
+
+
+
+
+    <table>
+        <tr>
+            <td>
+                <div class='page' id='github'>
+                    <h1>My Github</h1>
+                    <p>
+                        All my finalized programming projects in a place you can view easily. Programming language interpreters, 
+                        emulators, compilers, and more.
+                    </p>
+                    <a target='_blank' href="https://github.com/bora-yilmaz" id='ghbtn'>Click to see the code <sup>↗</sup></a>
+                </div>
+            </td>
+            <td>
+                <div class='page'></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class='page'></div>
+            </td>
+            <td>
+                <div class='page'></div>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+    <div id="soon">
+        <h2>Pages coming soon:</h2>
+        <ul>
+            <li>Music <sub>(please refer to my music Instagram page until then)</sub></li>
+            <li>Math</li>
+        </ul>
+    </div>
+
+    <div id="links">
+        My Github: <a target='_blank' href="https://github.com/bora-yilmaz">https://github.com/bora-yilmaz</a>
+        <br> My Music Instagram: @bora.y.music
+        <br> My Youtube Music: <a target='_blank' href='https://music.youtube.com/channel/UCJAqwHJQy0duIyHmTf0pIIw?si=E0SdtzD1dfZeRorX'>Bora Y</a>
+        <br> My Spotify: <a target='_blank' href='https://open.spotify.com/artist/0qOryHxmZf6VpfemAmFJ8n?si=MHaHLwVXRYmCd_53C_hnvA'>Bora Y</a>
+        <br> My E-mail: <a target='_blank' href="mailto:borayilmaz2009@hotmail.com">borayilmaz2009@hotmail.com</a>
     </div>
 </body>
 </html>
